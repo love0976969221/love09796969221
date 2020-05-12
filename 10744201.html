@@ -1,0 +1,535 @@
+<!doctype html>
+
+<head>
+    <style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: url("school.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+    }
+
+    .table1 {
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        text-align: center;
+        background-image: url("space.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+    }
+
+    .menu {
+        font: bold 24px "Helvetica Neue";
+        text-shadow: 0 2px 0 #cccccc, 0 2px 0 #c9c9c9, 0 1px 0 #bbbbbb;
+        font-family: 微軟正黑體;
+    }
+
+    .banner {
+        position: relative;
+        top: 100px;
+        z-index: 90;
+    }
+
+    .img_sky {
+        width: 100%;
+    }
+
+    .div1 {
+        position: relative;
+        top: 150px;
+        left: 40px;
+    }
+
+    .div2 {
+        position: relative;
+        top: 180px;
+        left: 40px;
+        z-index: 1;
+        float: left;
+    }
+
+    .div2_1 {
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 100%
+    }
+
+    .div2_2 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .div3 {
+        position: relative;
+        height: 475px;
+        width: 450px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("table2.png");
+        background-size: cover;
+        border-radius: 5%;
+        z-index: 2;
+        float: left;
+    }
+
+    .div4 {
+        position: relative;
+        left: 10px;
+        height: 475px;
+        width: 450px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("table2.png");
+        background-size: cover;
+        border-radius: 5%;
+        z-index: 2;
+        float: left;
+    }
+
+    .div5 {
+        position: relative;
+        height: 900px;
+        width: 450px;
+        top: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("table2.png");
+        background-size: cover;
+        z-index: 2;
+        float: left;
+    }
+
+    .div6 {
+        position: relative;
+        height: 420px;
+        width: 450px;
+        left: 10px;
+        top: 10px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("table2.png");
+        background-size: cover;
+        z-index: 2;
+        float: left;
+    }
+
+    .div7 {
+        position: relative;
+        height: 410px;
+        width: 600px;
+        top: 20px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("table2.png");
+        background-size: cover;
+        border-radius: 5%;
+        z-index: 2;
+    }
+
+    .div8 {
+        position: relative;
+        height: 410px;
+        width: 600px;
+        top: 33px;
+        padding-top: 5px;
+        padding-left: 15px;
+        background-image: url("star2.png");
+        background-size: cover;
+        border-radius: 5%;
+        z-index: 2;
+    }
+
+    .border1 {
+        border: 1px solid #a5b6c8;
+        background-image: url("table.png");
+        background-size: cover;
+        border-style: inset;
+    }
+
+    .title {
+        font: bold 30px "Helvetica Neue";
+        color: #0000cc;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .title2 {
+        font: bold 30px "Helvetica Neue";
+        color: #DDDDDD;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .sb {
+        position: fixed;
+        right: 10px;
+        top: 50%;
+        width: 100px;
+        margin-top: -7em;
+        background: linear-gradient(to right, #00c9ff 0%, #92fe9d 100%);
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-radius: 20px 120px;
+        z-index: 10;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: 'Just Another Hand', cursive;
+    }
+
+    .smalltitle {
+        font-size: 22px;
+    }
+
+    .img1 {
+        height: 200px;
+        padding-top: 15px;
+        padding-left: 4px;
+    }
+
+    .img2 {
+        height: 247px;
+        padding-top: 15px;
+        padding-left: 4px;
+    }
+
+    .img3 {
+        width: 430px;
+        padding-top: 15px;
+        padding-left: 4px;
+    }
+
+    .img4 {
+        width: 600px;
+        padding-top: 15px;
+    }
+
+    .img666 {}
+
+    a:hover {
+        color: #888888;
+    }
+
+    :target {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: 1px solid #009FCC;
+        outline: none;
+        background-color: white;
+        color: #009FCC;
+        cursor: pointer;
+        padding: 10px 15px 15px 15px;
+        border-radius: 10px;
+    }
+
+    .back-to-top:hover {
+        background-color: #77DDFF;
+        color: white;
+    }
+
+
+
+    .box2 {
+        margin: 20px auto;
+        width: 300px;
+        min-height: 200px;
+        padding: 10px;
+        position: relative;
+        background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1, #f3f3f3));
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        -webkit-border-bottom-right-radius: 60px 60px;
+        -webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+        float: left;
+
+    }
+
+    .box2:before {
+        content: '';
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        -webkit-border-bottom-right-radius: 30px;
+        -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+        -webkit-transform:
+            rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+    }
+
+    .box2:after {
+        content: '';
+        z-index: -1;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        -webkit-box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+        -webkit-transform: rotate(0deg) translate(-45px, -20px) skew(20deg);
+    }
+
+    .box2 img {
+        width: 100%;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+
+<body style="font-family:微軟正黑體; background-image: url(img/img.jpg);">
+    <table class="table1" width="100%">
+        <tr>
+            <td><img src="img/dog3.jpg" height="80"></td>
+            <td class="menu"><a href="#1">學歷背景</a></td>
+            <td class="menu"><a href="#2">社團/工作經驗</a></td>
+            <td class="menu"><a href="#3">興趣與目標</a></td>
+            <td class="menu"><a href="#4">自我期許</a></td>
+            <td class="menu"><a href="#5">生活紀錄</a></td>
+        </tr>
+    </table>
+    <div class="div1">
+        <span class="title" id="1">學歷背景</span><br><br>
+        <table border="3" class="border1">
+            <tr>
+                <td rowspan="11">
+                    <img src="img/me.jpg" width="200" style="vertical-align:middle;">
+                </td>
+                <td>
+                    姓名
+                </td>
+                <td>
+                    梁璟銘
+                </td>
+                <td>
+                    性別
+                </td>
+                <td>
+                    男
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    出生日期
+                </td>
+                <td>
+                    民國89年2月21日
+                </td>
+                <td>
+                    出生地
+                </td>
+                <td>
+                    台南市
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    信箱
+                </td>
+                <td>
+                    love0987656429@gamil.com
+                </td>
+                <td>
+                    電話
+                </td>
+                <td>
+                    0976969221
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    住址
+                </td>
+                <td colspan="3">
+                    台南市將軍區長榮里57號
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    求學背景
+                </td>
+                <td rowspan="2" colspan="3">
+                    漚汪國小<br>
+                    學甲國中<br>
+                    麥寮高中<br>
+                    中原大學資訊管理學系
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    社團經歷
+                </td>
+                <td rowspan="2" colspan="3">
+                    高中－－＞排球校隊、吉他社<br>
+                    大學－－＞排球校隊
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="sb">
+        姓名 : 梁璟銘<br>
+        班級 : 資管二乙<br>
+        學號 : 10744201<br>
+        電話 : 0976969221<br>
+        地址 : <br>
+        台南市將軍區<br>長榮里57號<br>
+        e-mail : <br>
+        love0976969221<br>@gamil.com<br>
+        <div style="text-align:right;"><a href="https://www.facebook.com/profile.php?id=100027808448204" target="_blank"><img src="img/fb.jpg" style="height:20px; vertical-align:middle;"></a><a href="https://www.facebook.com/profile.php?id=100027808448204" target="_blank">Facebook</a></div>
+    </div>
+    <div class="div2">
+        <div class="div2_1">
+            <div class="div3">
+                <span class="title" id="2">社團經驗</span>
+                <p>
+                    由於高中就在排球校隊，<br>
+                    所以就只有在高一的時候參加了吉他社，<br>
+                    從小就對於吉他有所憧憬，<br>
+                    感覺會彈吉他的人就很帥，<br>
+                    可惜只參加了一年，接下來的兩年時間，<br>
+                    社團活動都變成了我們的練球時間，<br>
+                    所以在我的社團經驗中，除了高一的吉他社外就是練球了。<br>
+
+
+                    <img src="img/7.jpg" width="100" height="250" class="img3">
+                </p>
+            </div>
+            <div class="div4">
+                <span class="title">工作經驗</span>
+                <p>
+                    <span class="smalltitle"></span><br>
+                    這是大學時我的第一次打工經驗，<br>
+                    讓我了解到服務業的辛苦，不但要早起備料，<br>
+                    面對客人時也要展現專業及親和力，<br>
+                    幸好在職期間沒有遇到較難纏的顧客。<br><br>
+                    <span class="smalltitle">體育室工讀生</span><br>
+                    剛步入大學的我希望自己有多餘的零用錢來買喜歡的東西，<br>
+                    剛好我又是學校的校隊，時常出入體育館，<br>
+                    對體育館的熟悉度比一般生還要高，<br>
+                    所以做起這份工來對我來說額外的輕鬆。<br><br>
+                </p>
+            </div>
+        </div>
+        <div class="div2_1">
+            <div class="div5">
+                <span class="title" id="3">興趣</span>
+                <p>
+                    <span class="smalltitle">排球</span>，是我最喜歡的運動，<br>
+                    也可以說是我的專長<br>
+                    小學三年級開始接觸就對它深感興趣，<br>
+                    於是就走上了我的排球路，不知不覺就打了12年了<br>
+                    參加過國內大大小小的比賽，其中最好的成績，<br>
+                    就是今年度大專排球聯賽拿到了第二名，<br>
+                    可以說排球讓我學了很多事，也讓我得到了很多的榮譽。<br>
+                    <img src="img/8.jpg" class="img1">
+
+                    <br><br>
+                    <span class="smalltitle">飼養寵物</span>，是我的第二興趣，<br>
+                    從小就喜歡看discovery的我，<br>
+                    了解各種動物的生活型態。<br>
+                    研究顯示：一個人的品性修養，<br>
+                    可以從他對待動物的方式評斷出來。<br>
+                    養小狗小貓或許只是人們的童年回憶，<br>
+                    而我從中學習到的，是責任心，以及尊重生命。<br>
+                    因此，建立一間完善的動物之家，成為了我的夢想。<br>
+                    <img src="img/dog1.jpg" class="img2">
+
+                </p>
+            </div>
+            <div class="div6">
+                <span class="title">目標</span>
+                <p>
+                    隨著科技發展日新月異，<br>
+                    在未來電腦已成了決定勝負的重大角色，<br>
+                    由於家業也和資訊流息息相關，<br>
+                    所以我想學習如何運用資訊科技，<br>
+                    有效的控制進、銷、存貨，<br>
+                    讓營運成本降低、提升效率、<br>
+                    增加產能、提高品質。<br>
+                    並導入POS、EDI等系統，結合所學，<br>
+                    幫助自己家中的事業更上一層樓。
+                </p>
+                
+            </div>
+        </div>
+        <div class="div2_1">
+            <div class="div7">
+                <span class="title" id="4">大學四年的自我期許</span>
+                <p>
+                  在大學四年中，<br>
+                  希望自己在個性上可以變得更加的穩重，<br>
+                  在資訊這個專業中更加的精通，<br>
+                  在寫程式方面中可加的厲害，<br>
+                  在畢業前做出一個很厲害很厲害的APP，<br>
+                  剩下的大概就是按部就班地完成學業了。
+                </p>
+            </div>
+        </div>
+        <div class="div2_1">
+            <div class="div8">
+                <span class="title2" id="5">生活紀錄</span><br>
+                <div class="box2">
+                <div>
+                    <img src="img/1.jpg">
+                    <img src="img/6.jpg">
+                    </div>
+                    <div>
+                    <img src="img/3.jpg">
+                    <img src="img/4.jpg">
+                    </div>
+                    <img src="img/5.jpg">
+                    <img src="img/2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="js-back-to-top back-to-top" title="回到頂端">&#65085;</button>
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function() {
+        var $win = $(window);
+        var $backToTop = $('.js-back-to-top');
+        $win.scroll(function() {
+            if ($win.scrollTop() > 100) {
+                $backToTop.show();
+            } else {
+                $backToTop.hide();
+            }
+        });
+        $backToTop.click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 200);
+        });
+    });
+    </script>
+</body>
+
+</html>
